@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/extras.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="theme-default">
+  <header id="header">
+    <nav class="nav-container">
+      <!-- Logo -->
+      <div class="logo">
+        <img src="../assets/images/logo.png" alt="Logo" />
+      </div>
+
+      <!-- Menu Desktop -->
+      <ul class="nav-menu">
+        <li><a href="#slideshow">SlideShow</a></li>
+        <li><a href="#quiz">Quiz</a></li>
+      </ul>
+
+      <!-- Controles Desktop -->
+      <div class="nav-controls">
+        <!-- Theme Switcher -->
+        <div class="theme-switcher">
+          <button class="theme-btn" data-theme="default" title="Tema Claro">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="6" fill="#fff" stroke="#2196f3" stroke-width="2"/>
+              <circle cx="12" cy="12" r="10" stroke="#2196f3" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+          <button class="theme-btn" data-theme="dark" title="Modo Escuro">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="#2196f3" stroke-width="2" fill="#222"/>
+              <path d="M16 12a4 4 0 0 1-4 4" stroke="#fff" stroke-width="2" fill="none"/>
+            </svg>
+          </button>
+          <button class="theme-btn" data-theme="jade" title="Jade Pastel">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="#2196f3" stroke-width="2" fill="#B5E2C5"/>
+              <circle cx="12" cy="12" r="6" fill="#85AB7E" stroke="#2196f3" stroke-width="2"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Back Button -->
+        <a href="../../index.html" class="back-btn" title="Voltar">
+          <svg width="28" height="28" fill="none" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hamburger Button -->
+      <button class="hamburger" id="hamburgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-content">
+      <button class="close-btn" id="closeBtn">&times;</button>
+      
+      <nav class="mobile-nav">
+        <a href="#slideshow">SlideShow</a>
+        <a href="#quiz">Quiz</a>
+        
+        <div class="mobile-theme-switcher">
+          <span>Temas:</span>
+          <div class="mobile-theme-buttons">
+            <button class="theme-btn" data-theme="default" title="Tema Claro">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="6" fill="#fff" stroke="#2196f3" stroke-width="2"/>
+                <circle cx="12" cy="12" r="10" stroke="#2196f3" stroke-width="2" fill="none"/>
+              </svg>
+            </button>
+            <button class="theme-btn" data-theme="dark" title="Modo Escuro">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#2196f3" stroke-width="2" fill="#222"/>
+                <path d="M16 12a4 4 0 0 1-4 4" stroke="#fff" stroke-width="2" fill="none"/>
+              </svg>
+            </button>
+            <button class="theme-btn" data-theme="jade" title="Jade Pastel">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <circle cx="12" cy="12" r="10" stroke="#2196f3" stroke-width="2" fill="#B5E2C5"/>
+                <circle cx="12" cy="12" r="6" fill="#85AB7E" stroke="#2196f3" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <a href="../../index.html" class="back-link">
+          <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path d="M15 18l-6-6 6-6" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          Voltar
+        </a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Conteúdo da página -->
+  <main>
+<section class="slideshow" id="slideshow">
+  <div class="slideshow-container">
+    <button class="slideshow-arrow left" aria-label="Anterior">&lt;</button>
+    <div class="slideshow-slide active">
+      <img src="../assets/images/extra1.png" alt="Alerta em tempo real" />
+      <div class="slideshow-content">
+        <h3>Alerta em tempo real</h3>
+        <p>Receba notificações instantâneas sobre enchentes na sua região e mantenha sua família segura.</p>
+      </div>
+    </div>
+    <div class="slideshow-slide">
+      <img src="../assets/images/extra2.png" alt="Comunidade conectada" />
+      <div class="slideshow-content">
+        <h3>Comunidade conectada</h3>
+        <p>Compartilhe informações e ajude vizinhos a se protegerem, criando uma rede colaborativa de segurança.</p>
+      </div>
+    </div>
+    <div class="slideshow-slide">
+      <img src="../assets/images/extra3.png" alt="Tecnologia a favor da vida" />
+      <div class="slideshow-content">
+        <h3>Tecnologia a favor da vida</h3>
+        <p>Utilize recursos modernos para monitorar áreas de risco e planejar rotas seguras em dias de chuva.</p>
+      </div>
+    </div>
+    <button class="slideshow-arrow right" aria-label="Próximo">&gt;</button>
+  </div>
+  <div class="slideshow-dots">
+    <button class="dot active" aria-label="Slide 1"></button>
+    <button class="dot" aria-label="Slide 2"></button>
+    <button class="dot" aria-label="Slide 3"></button>
+  </div>
+</section>
+
+<section class="quiz-section" id="quiz">
+  <div class="quiz-container">
+    <!-- Tela de consentimento -->
+    <div class="quiz-consent" id="quizConsent">
+      <h3>Quiz: Você sabe tudo sobre enchentes?</h3>
+      <p>
+        Antes de começar, precisamos do seu consentimento para compartilhar seu resultado conosco. Seus dados não serão usados para outros fins.
+      </p>
+      <label class="quiz-consent-label">
+        <input type="checkbox" id="consentCheckbox" />
+        Estou de acordo em compartilhar meu resultado.
+      </label>
+      <button class="quiz-btn" id="startQuizBtn" disabled>Iniciar Quiz</button>
+    </div>
+
+    <!-- Quiz em si -->
+    <form class="quiz-form" id="quizForm" style="display:none;">
+      <div class="quiz-question" id="quizQuestion"></div>
+      <div class="quiz-options" id="quizOptions"></div>
+      <button type="button" class="quiz-btn" id="nextQuestionBtn" disabled>Próxima</button>
+      <div class="quiz-progress" id="quizProgress"></div>
+    </form>
+
+    <!-- Resultado -->
+    <div class="quiz-result" id="quizResult" style="display:none;">
+      <h3>Resultado do Quiz</h3>
+      <p id="quizScore"></p>
+      <button class="quiz-btn" id="restartQuizBtn">Refazer Quiz</button>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <script src="../js/extras.js"></script>
+</body>
+</html>
