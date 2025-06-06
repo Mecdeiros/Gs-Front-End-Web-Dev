@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // ===== SMOOTH SCROLL =====
+  // ===== SMOOTH SCROLL (scrollagem suave) =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
       e.preventDefault();
