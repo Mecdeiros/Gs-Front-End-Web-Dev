@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log('📱 Menu mobile aberto');
     });
 
-    // Fechar menu - botão X
+    // Fechar menu - botão de fechar (X)
     if (closeBtn) {
       closeBtn.addEventListener('click', function () {
         console.log('❌ Botão fechar clicado!');
